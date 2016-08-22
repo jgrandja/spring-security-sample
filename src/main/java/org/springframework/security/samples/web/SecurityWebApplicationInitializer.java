@@ -13,19 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.springframework.security.samples;
+package org.springframework.security.samples.web;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.security.web.context.AbstractSecurityWebApplicationInitializer;
 
 /**
  * @author Joe Grandja
  */
-@SpringBootApplication
-public class SampleApplication {
-
-	public static void main(String[] args) {
-		SpringApplication.run(SampleApplication.class, args);
-	}
-
+public class SecurityWebApplicationInitializer extends AbstractSecurityWebApplicationInitializer {
 }
